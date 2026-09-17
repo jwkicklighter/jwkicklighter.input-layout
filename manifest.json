@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "jordan.input-layout",
+  "name": "Input layout",
+  "version": "1.0.0",
+  "author": "Jordan Kicklighter",
+  "license": "MIT",
+  "description": "Tray widget for the active xkb keyboard layout and variant. Left-click opens a flyout to pick the active layout; right-click or scroll cycles layouts, middle-click cycles back. Use the gear to pick which layouts are enabled.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Input layout",
+    "description": "Active xkb layout+variant label. Left-click opens the layout flyout, right-click or scroll cycles layouts, middle-click cycles back. Manage enabled layouts via the gear.",
+    "category": "Compositor",
+    "allowMultiple": false,
+    "defaultSection": "center"
+  }
+}
