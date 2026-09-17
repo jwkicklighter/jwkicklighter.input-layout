@@ -8,7 +8,7 @@ import "InputLayoutModel.js" as Model
 
 BarWidget {
   id: root
-  moduleName: "jordan.input-layout"
+  moduleName: "jwkicklighter.input-layout"
 
   readonly property bool opened: panelLoader.item ? panelLoader.item.opened === true : false
   readonly property bool popoutSwitchClosing: panelLoader.item ? panelLoader.item.popoutSwitchClosing === true : false
@@ -28,7 +28,7 @@ BarWidget {
   property bool configPending: false
   readonly property var enabledLayouts: Model.rowsForLayouts(root.enabledIds, root.xkbTable)
   readonly property string configPath: Quickshell.env("HOME")
-    + "/.local/state/omarchy/plugins/jordan.input-layout/config.json"
+    + "/.local/state/omarchy/plugins/jwkicklighter.input-layout/config.json"
 
   property bool refreshPending: false
   property bool applyPending: false
@@ -228,7 +228,7 @@ BarWidget {
   Process {
     id: ensureDirProc
     command: ["mkdir", "-p",
-      Quickshell.env("HOME") + "/.local/state/omarchy/plugins/jordan.input-layout"]
+      Quickshell.env("HOME") + "/.local/state/omarchy/plugins/jwkicklighter.input-layout"]
     onExited: configFile.reload()
   }
 

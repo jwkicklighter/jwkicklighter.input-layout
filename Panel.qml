@@ -4,7 +4,7 @@ import qs.Ui
 
 Panel {
   id: root
-  moduleName: "jordan.input-layout"
+  moduleName: "jwkicklighter.input-layout"
   manageIpc: false
 
   property var anchorItem: null
